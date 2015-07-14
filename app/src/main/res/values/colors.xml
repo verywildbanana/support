@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    
+    <color name="transparency_titlte_bar">#80ffffff</color>
+    <color name="screen_bg">#ffeceef1</color>
+    <color name="white">#ffffffff</color>
+    <color name="black">#ff000000</color>
+    <color name="darkgray">#a0000000</color>
+    <color name="dimmedcolor">#60000000</color>
+    <color name="gray">#ffcccccc</color>
+    <color name="red">#ffff0000</color>
+    <color name="alphawhite">#60ffffff</color>
+    <color name="subobjectbtn_text_color">#ff4aa5d4</color>
+    <color name="subobjectbtn_text_focus_color">#ffee4300</color>
+    <color name="black_Translucent">#a0000000</color>
+    <color name="pale_black_Translucent">#40000000</color>
+    <color name="green">#ff00ff00</color>
+    <color name="transparent">#00000000</color>
+    <color name="blue">#ff0000ff</color>
+    <color name="statue_blue">#ff2222ff</color>
+    <color name="blue_translucent">#600000ff</color>
+    <color name="board_name_color">#ff0073b9</color>
+    <color name="light_blue">#ff0272bc</color>
+    <color name="building_shape_color">#ffbacd83</color>
+    <color name="statue_shape_color">#ff66abd0</color>
+    <color name="ovjet_default_color">#ff323c3c</color>
+    <color name="ovjet_system_font">#ff999999</color>
+    <color name="setting_index_text_color">#3d3d3d</color>
+    <color name="setting_index_text_color_2">#f04e23</color>
+    <color name="setting_index_bg">#f2f2f2</color>
+    <color name="pk_select_color">#f04e23</color>
+    <color name="pk_page_indicator_nor">#e6e6e6</color>
+    <color name="pk_coupon_list_item_split_nor">#9d9d9d</color>
+    <color name="pk_show_thema_for_spot_list_inflate_split">#ededed</color>
+    <!-- 3party color -->
+
+    <color name="bluedot_color">#18abdb</color>
+    <color name="pk_title_text_color">#f24726</color>
+    <color name="version_current_title_text_color">#3e3e3e</color>
+    <color name="version_current_sub_title_text_color">#808080</color>
+    <color name="version_latest_title_text_color">#f04e23</color>
+    <color name="version_latest_sub_title_text_color">#f24726</color>
+    <color name="viewfinder_frame">#ff000000</color>
+    <color name="viewfinder_laser">#ffff0000</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="result_view">#b0000000</color>
+    <color name="bubblepopup_line_nor">#27000000</color>
+    <color name="bubblepopup_line_sel">#34ffffff</color>
+    <color name="grid_state_pressed">#BB7dbcd3</color>
+    <color name="grid_state_focused">#777dbcd3</color>
+
+    <!-- default -->
+    <color name="pickat_gray_bg">#f2f2f2</color>
+    
+    <!-- General Rules -->
+    <color name="color_1">#ffffff</color>
+    <color name="color_2">#000000</color>
+    <color name="color_3">#464646</color>
+    <color name="color_4">#656565</color>
+    <color name="color_5">#898989</color>
+    <color name="color_6">#aaaaaa</color>
+    <color name="color_7">#d9d9d9</color> <!-- d7d7d7 -->
+    <color name="color_8">#96ca3a</color> <!-- eb5340 -->
+    <color name="color_9">#fc7648</color> <!-- #ff8746 -->
+
+    <!-- Theme Text Color -->
+    <color name="whit_op60">#90FFFFFF</color>
+    <color name="black_op60">#90000000</color>
+    <color name="white_op80">#CCFFFFFF</color>
+    <color name="black_op10">#16000000</color>
+    <color name="black_op20">#33000000</color>
+    <color name="white_op50">#80ffffff</color>
+
+    <!-- Category -->
+    <color name="all_category_01">#ffffff</color>
+    <color name="all_category_02">#554a65</color>
+    <color name="all_category_03">#c1374c</color>
+    <color name="f2f2f2">#f2f2f2</color>
+    <color name="e6e6e6">#e6e6e6</color>
+    
+    <!--  Left Menu -->
+    <color name="black_op05">#0C000000</color>
+    
+    <!--  News Drop Down List  -->
+    <color name="ededed">#ededed</color>
+    <color name="_858585">#858585</color>
+    <color name="fafafa">#fffafafa</color>
+
+    
+    <color name="emphasize_color">#6eb14d</color>
+    <color name="statusbar_color">#9cd048</color>
+    
+    <!--  Theme select poi Text -->
+    <color name="_FF7B6B">#FF7B6B</color>
+    
+    <!--  Category BG -->
+    <!-- 전체 카테고리 -->
+    <color name="total_category_bg">#a5a6ac</color>
+    <!-- 음식 -->
+    <color name="food_bg">#ff9f4a</color>
+    <!-- 카페/제과 -->
+    <color name="cafe_bg">#875646</color>
+    <!-- 약국 -->
+    <color name="pharmacy_bg">#29b2a0</color>
+    <!-- 자동차 -->
+    <color name="car_bg">#494949</color>
+    <!-- 은행 -->
+    <color name="bank_bg">#314b99</color>
+    <!-- 공공기관 -->
+    <color name="gover_bg">#253258</color>
+    <!-- 병원 -->
+    <color name="hospital_bg">#347eb2</color>
+    <!-- 영화 -->
+    <color name="movie_bg">#a34781</color>
+    <!-- 여가 -->
+    <color name="house_bg">#b1d671</color>
+    <!-- 부동산 -->
+    <color name="property_bg">#81655d</color>
+    <!-- 오락/서비스 -->
+    <color name="fun_bg">#f26d7d</color>
+    <!-- 추가 -->
+    <color name="add_bg">#e37365</color>
+    <!-- 주유소 -->
+    <color name="gas_bg">#898989</color>
+    <!-- 나들이/문화 -->
+    <color name="culture_bg">#c1374c</color>
+    <!-- 기타/교통 -->
+    <color name="etc_bg">#eb5340</color>
+    
+    <color name="gome_banner_bg_1">#49c2af</color>
+    <color name="gome_banner_bg_2">#54a5b6</color>
+    
+    <color name="price_strike_line">#b9b9b9</color>
+    
+    <color name="e0e0e0">#e0e0e0</color>
+    <color name="ff7e5b">#ff7e5b</color>
+    <color name="_8b8b8b">#8b8b8b</color>
+	<color name="ececec">#ececec</color>
+	<color name="f7f7f7">#f7f7f7</color>
+	<color name="_63b14d">#63b14d</color>
+	<color name="acacac">#acacac</color>
+	<color name="f9f9f9">#f9f9f9</color>
+	<color name="fab446">#fab446</color>
+	<color name="d5993c">#d5993c</color>
+	
+    
+</resources>
