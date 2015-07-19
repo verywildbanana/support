@@ -25,4 +25,11 @@
         <item name="android:windowAnimationStyle">@null</item>
     </style>
 
+    <style name="Theme.SplashBackground" parent="android:Theme">
+
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@drawable/shape_splash_window</item>
+
+    </style>
+
 </resources>
