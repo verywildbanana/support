@@ -1,0 +1,38 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gr_05_00"
+    tools:context="com.lhd.giveandreview.StartActivity">
+
+
+    <com.lhd.view.PkButton
+        android:id="@+id/SkipBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/gr_05_03" />
+
+
+    <com.lhd.view.PkButton
+        android:id="@+id/KakaoLoginBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/SkipBtn"
+        android:layout_marginBottom="15dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/gr_05_02" />
+
+
+    <com.lhd.view.PkButton
+        android:id="@+id/FacebookLoginBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/KakaoLoginBtn"
+        android:layout_marginBottom="15dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/gr_05_01" />
+
+</RelativeLayout>
