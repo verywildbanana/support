@@ -232,6 +232,7 @@
                     android:orientation="vertical">
 
                     <com.lhd.view.PkImageView
+                        android:id="@+id/GiveBtn"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal"
@@ -248,6 +249,7 @@
                     android:orientation="vertical">
 
                     <com.lhd.view.PkImageView
+                        android:id="@+id/ReviewBtn"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal"

@@ -1,15 +1,10 @@
 package com.lhd.giveandreview;
 
-import android.content.Context;
 import android.os.Bundle;
-import android.support.v4.view.PagerAdapter;
-import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup;
 
 import com.lhd.giveandreview.base.BaseActivity;
-import com.lhd.util.SmartLog;
-import com.lhd.view.PkViewPager;
+import com.lhd.giveandreview.base.PkIntentManager;
 
 public class MainActivity extends BaseActivity {
 
@@ -28,6 +23,24 @@ public class MainActivity extends BaseActivity {
     public void initActivity() {
 
         setContentView(R.layout.activity_main);
+
+        findViewById(R.id.GiveBtn).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                PkIntentManager.getInstance().push(MainActivity.this, GivePageActivity.class, true);
+
+            }
+        });
+
+        findViewById(R.id.ReviewBtn).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                PkIntentManager.getInstance().push(MainActivity.this, GivePageActivity.class, true);
+
+            }
+        });
 
 
     }
