@@ -20,9 +20,11 @@ public class GivePageActivity extends BaseActivity {
     @Override
     public void initActivity() {
 
+
+
         setContentView(R.layout.activity_give_page);
 
-
+//adsfasdf
 
     }
 }
