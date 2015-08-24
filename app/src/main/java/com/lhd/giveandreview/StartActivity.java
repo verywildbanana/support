@@ -10,6 +10,7 @@ import android.view.ViewGroup;
 import com.lhd.giveandreview.base.BaseActivity;
 import com.lhd.giveandreview.base.PkIntentManager;
 import com.lhd.util.SmartLog;
+import com.lhd.view.PkCirclePageIndicator;
 import com.lhd.view.PkViewPager;
 
 public class StartActivity extends BaseActivity {
@@ -17,6 +18,7 @@ public class StartActivity extends BaseActivity {
 
     private PkViewPager mViewPager;
     private ViewPagerAdapter mViewPagerAdapter;
+    private PkCirclePageIndicator mNavigation;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,6 +39,15 @@ public class StartActivity extends BaseActivity {
         mViewPagerAdapter = new ViewPagerAdapter(this);
         mViewPager.setAdapter(mViewPagerAdapter);
 
+        mNavigation = (PkCirclePageIndicator)findViewById(R.id.Navigation);
+        float density = getResources().getDisplayMetrics().density;
+        mNavigation.setViewPager(mViewPager);
+        mNavigation.setRadius(4 * density);
+        mNavigation.setPageColor(0xffa3a3a3);
+        mNavigation.setFillColor(getResources().getColor(R.color.red));
+        mNavigation.setStrokeColor(0xffa3a3a3);
+        mNavigation.setStrokeWidth(3 * density);
+        mNavigation.setCentered(true);
 
     }
 

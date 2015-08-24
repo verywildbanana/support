@@ -1,0 +1,133 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="71dp"
+    android:background="@color/white"
+    >
+
+
+
+
+    <com.lhd.view.PkImageView
+        android:id="@+id/ItemImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp"
+        android:src="@drawable/g_3_1_smallpic" />
+
+
+    <LinearLayout
+        android:id="@+id/RighyLay"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        >
+
+        <com.lhd.view.PkImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/g_3_1_up" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+
+            <com.lhd.view.PkImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/g_3_1_placeicon" />
+
+
+            <com.lhd.view.PkTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0.5Km"
+                android:layout_marginLeft="3dp"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/ItemImg"
+        android:layout_toLeftOf="@+id/RighyLay"
+        android:orientation="vertical"
+        android:paddingLeft="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.lhd.view.PkTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="진미식당"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <com.lhd.view.PkImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/g_3_1_hot" />
+
+        </LinearLayout>
+
+
+        <com.lhd.view.PkTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="한식 | 강남구 역삼동"
+            android:textColor="@color/black"
+            android:textSize="14dp" />
+
+        <com.lhd.view.PkTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="치킨 한마리/생맥주 한잔 제공"
+            android:textColor="@color/black"
+            android:textSize="14dp" />
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="6dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/g_3_1_sidebar"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/black_op60"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignParentBottom="true"
+        android:background="@color/black_op60"
+        />
+
+
+</RelativeLayout>

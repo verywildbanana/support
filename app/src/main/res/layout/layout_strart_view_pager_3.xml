@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:scaleType="center"
-        android:src="@drawable/gr_04_00"
+        android:src="@drawable/g_1_2_3_main"
         />
 
 
@@ -23,7 +23,7 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:scaleType="center"
-        android:src="@drawable/gr_04_02"
+        android:src="@drawable/g_1_2_3_start"
         android:layout_marginTop="30dp"
         />
 

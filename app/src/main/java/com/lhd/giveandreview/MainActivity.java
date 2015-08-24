@@ -1,14 +1,17 @@
 package com.lhd.giveandreview;
 
 import android.os.Bundle;
-import android.view.View;
+import android.view.ViewGroup;
+import android.view.animation.Animation;
+import android.view.animation.TranslateAnimation;
 
 import com.lhd.giveandreview.base.BaseActivity;
-import com.lhd.giveandreview.base.PkIntentManager;
 
 public class MainActivity extends BaseActivity {
 
 
+    ViewGroup mFlowTxtLay;
+    TranslateAnimation animationTranSlate = null;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,24 +27,61 @@ public class MainActivity extends BaseActivity {
 
         setContentView(R.layout.activity_main);
 
-        findViewById(R.id.GiveBtn).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
+        mFlowTxtLay = (ViewGroup) findViewById(R.id.FlowTxtLay);
 
-                PkIntentManager.getInstance().push(MainActivity.this, GivePageActivity.class, true);
+        startFlowAni(true);
 
-            }
-        });
+    }
 
-        findViewById(R.id.ReviewBtn).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
+    private void startFlowAni(boolean first) {
 
-                PkIntentManager.getInstance().push(MainActivity.this, GivePageActivity.class, true);
+        if(first) {
 
-            }
-        });
+            animationTranSlate = new TranslateAnimation(Animation.RELATIVE_TO_SELF, 0,
+                    Animation.RELATIVE_TO_SELF, -1,
+                    Animation.RELATIVE_TO_SELF, 0,
+                    Animation.RELATIVE_TO_SELF, 0);
+
+            animationTranSlate.setDuration(3000);
+
+        }
+        else {
+
+            animationTranSlate = new TranslateAnimation(Animation.RELATIVE_TO_SELF, 3,
+                    Animation.RELATIVE_TO_SELF, -1,
+                    Animation.RELATIVE_TO_SELF, 0,
+                    Animation.RELATIVE_TO_SELF, 0);
+
+            animationTranSlate.setDuration(6000);
+
+
+        }
+
+
+
+        animationTranSlate.setAnimationListener(mAnimationListener);
+        mFlowTxtLay.startAnimation(animationTranSlate);
 
 
     }
+
+    Animation.AnimationListener mAnimationListener =   new Animation.AnimationListener() {
+        @Override
+        public void onAnimationStart(Animation animation) {
+
+        }
+
+        @Override
+        public void onAnimationEnd(Animation animation) {
+
+            startFlowAni(false);
+
+        }
+
+        @Override
+        public void onAnimationRepeat(Animation animation) {
+
+        }
+    };
+
 }
