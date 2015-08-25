@@ -1,315 +1,72 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:kiwi="http://schemas.kiwiple.com/kiwi"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/white"
-    android:orientation="vertical">
-
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/g_4_topbar">
-
-    </RelativeLayout>
-
+    android:layout_height="match_parent">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:orientation="horizontal">
-
-        <RelativeLayout
-            android:id="@+id/PlaceLay1"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1">
-
-            <com.lhd.view.PkTextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:text="강남"
-                android:textStyle="bold"
-                android:textColor="@color/black"
-                android:textSize="15dp" />
-
-        </RelativeLayout>
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
 
 
         <RelativeLayout
-            android:id="@+id/PlaceLay2"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1">
-
-            <com.lhd.view.PkTextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:text="이태원"
-                android:textStyle="bold"
-                android:textColor="@color/black"
-                android:textSize="15dp" />
-
-
-        </RelativeLayout>
-
-
-        <RelativeLayout
-            android:id="@+id/PlaceLay3"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1">
-
-            <com.lhd.view.PkTextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:text="홍대"
-                android:textStyle="bold"
-                android:textColor="@color/black"
-                android:textSize="15dp" />
-
-
-        </RelativeLayout>
-
-
-        <RelativeLayout
-            android:id="@+id/PlaceLay4"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1">
-
-            <com.lhd.view.PkTextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:text="신사동"
-                android:textStyle="bold"
-                android:textColor="@color/black"
-                android:textSize="15dp" />
-
-
-        </RelativeLayout>
-
-
-        <RelativeLayout
-            android:id="@+id/PlaceLay5"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1">
-
-            <com.lhd.view.PkTextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:text="가로수길"
-                android:textStyle="bold"
-                android:textColor="@color/black"
-                android:textSize="15dp" />
-
-
-        </RelativeLayout>
-
-
-        <RelativeLayout
-            android:id="@+id/PlaceLay6"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1">
-
-            <com.lhd.view.PkTextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:text="압구정"
-                android:textStyle="bold"
-                android:textColor="@color/black"
-                android:textSize="15dp" />
-
-        </RelativeLayout>
-
-
-    </LinearLayout>
-
-
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="190dp"
-        >
-
-        <com.lhd.view.PkImageView
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_alignParentRight="true"
-            android:layout_margin="10dp"
-            />
-
-    </RelativeLayout>
-
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center_vertical"
-        android:background="@drawable/g_4_namebar"
-        android:orientation="horizontal">
-
-        <com.lhd.view.PkTextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="홍대입구역"
-            android:layout_marginLeft="15dp"
-            android:textColor="@color/white"
-            android:textStyle="bold"
-            android:textSize="10dp" />
-
-
-        <com.lhd.view.PkTextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="미즈컨테이너"
-            android:layout_marginLeft="50dp"
-            android:textColor="@color/white"
-            android:textStyle="bold"
-            android:textSize="10dp" />
-
-
-    </LinearLayout>
-
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:orientation="horizontal"
-        >
-
+            android:background="@drawable/g_4_topbar"></RelativeLayout>
 
 
         <LinearLayout
-            android:layout_width="200dp"
-            android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:background="@drawable/g_4_underline"
-            >
+            android:id="@+id/ProvinceLay"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:orientation="vertical">
 
-            <RelativeLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                >
+            <com.lhd.view.PkSlidingTabLayout
+                android:id="@+id/SlideTabLay"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:visibility="visible" />
 
-                <com.lhd.view.PkTextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="서울시 강남구 역삼동 741-21번지 210호"
-                    android:layout_marginLeft="30dp"
-                    android:textColor="@color/black"
-                    android:layout_marginTop="10dp"
-                    android:textStyle="bold"
-                    android:lines="2"
-                    android:textSize="13dp"
-                    />
+            <com.lhd.view.PkViewPager
+                android:id="@+id/ViewPager"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
 
-            </RelativeLayout>
-
-            <RelativeLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                >
-
-
-                <com.lhd.view.PkTextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="3대째 이어온 오삼불고기 맛집이고 다양한 메뉴가 있습니다. 친절한 서비스로 모시겠습니다."
-                    android:layout_marginLeft="30dp"
-                    android:textColor="@color/black"
-                    android:layout_marginTop="10dp"
-                    android:lines="3"
-                    android:textStyle="bold"
-                    android:textSize="13dp"
-                    />
-
-            </RelativeLayout>
-
-
-            <RelativeLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                >
-
-
-                <com.lhd.view.PkTextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="오삼불고기 2인분, 소주 1병 제공 한줄더"
-                    android:layout_marginLeft="30dp"
-                    android:textColor="@color/black"
-                    android:layout_marginTop="10dp"
-                    android:lines="2"
-                    android:textStyle="bold"
-                    android:textSize="13dp"
-                     />
-
-            </RelativeLayout>
-
+                />
 
         </LinearLayout>
 
 
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-        <com.lhd.view.PkImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
-            android:src="@drawable/g_4_center" />
+            <com.lhd.view.PkViewPager
+                android:id="@+id/ContentViewPager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
 
+                />
 
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:orientation="vertical"
-            >
-
-
-            <LinearLayout
+            <com.lhd.view.PkCirclePageIndicator
+                android:id="@+id/Navigation"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:gravity="center"
-                >
+                android:layout_marginTop="20dp"
+                android:gravity="center_horizontal" />
 
-
-
-
-                <com.lhd.view.PkImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="10dp"
-                    android:src="@drawable/g_4_entry" />
-
-                <com.lhd.view.PkTextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textColor="@color/black"
-                    android:textStyle="bold"
-                    android:textSize="40dp"
-                    android:text="39"
-                    />
-
-            </LinearLayout>
-
-        </LinearLayout>
+        </RelativeLayout>
 
     </LinearLayout>
 
-</LinearLayout>
+    <include
+        layout="@layout/layout_main_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>

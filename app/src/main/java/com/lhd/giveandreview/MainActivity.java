@@ -1,11 +1,14 @@
 package com.lhd.giveandreview;
 
 import android.os.Bundle;
+import android.view.View;
 import android.view.ViewGroup;
 import android.view.animation.Animation;
 import android.view.animation.TranslateAnimation;
 
 import com.lhd.giveandreview.base.BaseActivity;
+import com.lhd.giveandreview.base.PkIntentManager;
+import com.lhd.view.PkOnOffToggleButton;
 
 public class MainActivity extends BaseActivity {
 
@@ -29,9 +32,30 @@ public class MainActivity extends BaseActivity {
 
         mFlowTxtLay = (ViewGroup) findViewById(R.id.FlowTxtLay);
 
+
+        PkOnOffToggleButton mGivewMenu = (PkOnOffToggleButton)findViewById(R.id.GivewMenu);
+        mGivewMenu.setOnClickListener(mClickListener);
         startFlowAni(true);
 
     }
+
+    View.OnClickListener mClickListener = new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+
+            switch (v.getId()) {
+
+                case R.id.GivewMenu:
+
+                    PkIntentManager.getInstance().push(MainActivity.this, GivePageActivity.class, true);
+                    break;
+
+
+            }
+
+        }
+    };
+
 
     private void startFlowAni(boolean first) {
 
