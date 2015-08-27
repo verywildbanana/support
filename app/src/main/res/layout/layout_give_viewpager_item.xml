@@ -2,7 +2,7 @@
     xmlns:kiwi="http://schemas.kiwiple.com/kiwi"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="match_parent"
     android:background="@color/white"
     android:orientation="vertical">
 
@@ -81,13 +81,13 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="180dp"
+        android:layout_height="wrap_content"
         android:layout_weight="1"
         android:orientation="horizontal">
 
         <RelativeLayout
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_weight="1"
             android:orientation="horizontal"
             android:paddingTop="15dp">
@@ -120,7 +120,7 @@
                 <com.lhd.view.PkTextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="13dp"
+                    android:layout_marginTop="9dp"
                     android:singleLine="true"
                     android:paddingLeft="20dp"
                     android:text="오삼불고기 2인분"
@@ -132,7 +132,7 @@
                 <com.lhd.view.PkTextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="6dp"
+                    android:layout_marginTop="4dp"
                     android:singleLine="true"
                     android:text="소주 1병"
                     android:paddingLeft="20dp"
@@ -236,6 +236,40 @@
         </LinearLayout>
 
     </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+
+
+        <com.lhd.view.PkImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/g_4_more"
+            android:layout_weight="1"
+            />
+
+
+        <com.lhd.view.PkImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/g_4_review"
+            android:layout_weight="1"
+            />
+
+
+        <com.lhd.view.PkImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/g_4_try"
+            android:layout_weight="1"
+            />
+
+    </LinearLayout>
+
 
 
 </LinearLayout>

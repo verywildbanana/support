@@ -19,7 +19,9 @@ public class GivePageActivity extends BaseActivity {
     PkSlidingTabLayout mSlideTabLay;
     PkViewPager mViewPager;
     PkCirclePageIndicator mNavigation;
-    ViewPagerAdapter mViewPagerAdapter;
+    ViewPagerAdapter  mViewPagerAdapter;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,14 +40,29 @@ public class GivePageActivity extends BaseActivity {
         setContentView(R.layout.activity_give_page);
 
         mSlideTabLay = (PkSlidingTabLayout)findViewById(R.id.SlideTabLay);
-        mViewPager = (PkViewPager)findViewById(R.id.ViewPager);
-        mViewPager.setOnPageChangeListener(mOnPageChangeListener);
+        PkViewPager viewPager = (PkViewPager)findViewById(R.id.ViewPager);
+        viewPager.setOnPageChangeListener(mOnPageChangeListener);
+
+        ProvincePagerAdapter viewPagerAdapter = new ProvincePagerAdapter(this);
+        viewPager.setAdapter(viewPagerAdapter);
+        mSlideTabLay.setViewPager(viewPager);
+
+        mViewPager  = (PkViewPager)findViewById(R.id.ContentViewPager);
         mNavigation = (PkCirclePageIndicator)findViewById(R.id.Navigation);
 
-        mViewPagerAdapter = new ViewPagerAdapter(this);
+        ViewPagerAdapter  mViewPagerAdapter = new ViewPagerAdapter(this);
         mViewPager.setAdapter(mViewPagerAdapter);
 
-        mSlideTabLay.setViewPager(mViewPager);
+        mNavigation = (PkCirclePageIndicator)findViewById(R.id.Navigation);
+        float density = getResources().getDisplayMetrics().density;
+        mNavigation.setViewPager(mViewPager);
+        mNavigation.setRadius(4 * density);
+        mNavigation.setPageColor(0xffa3a3a3);
+        mNavigation.setFillColor(getResources().getColor(R.color.red));
+        mNavigation.setStrokeColor(0xffa3a3a3);
+        mNavigation.setStrokeWidth(3 * density);
+        mNavigation.setCentered(true);
+
     }
 
 
@@ -67,14 +84,14 @@ public class GivePageActivity extends BaseActivity {
     };
 
 
-    class ViewPagerAdapter extends PagerAdapter {
+    class ProvincePagerAdapter extends PagerAdapter {
 
         Context mContext;
         LayoutInflater mLayoutInflater;
 
         ArrayList<String> mPageTitles = new ArrayList<String>();
 
-        public ViewPagerAdapter(Context context) {
+        public ProvincePagerAdapter(Context context) {
 
             mContext = context;
             mLayoutInflater = LayoutInflater.from(context);
@@ -82,6 +99,10 @@ public class GivePageActivity extends BaseActivity {
             mPageTitles.add("강남");
             mPageTitles.add("이태원");
             mPageTitles.add("홍대");
+            mPageTitles.add("신사동");
+            mPageTitles.add("가로수");
+            mPageTitles.add("압구정");
+
 
         }
 
@@ -93,7 +114,7 @@ public class GivePageActivity extends BaseActivity {
         @Override
         public int getCount() {
 
-            return 3;
+            return mPageTitles.size();
 
         }
 
@@ -101,8 +122,6 @@ public class GivePageActivity extends BaseActivity {
         public View instantiateItem(ViewGroup container, int position) {
 
             View  view = new View(GivePageActivity.this);
-            view.setBackgroundColor(getResources().getColor(R.color.red));
-
             container.addView(view, ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT);
 
             return view;
@@ -121,5 +140,58 @@ public class GivePageActivity extends BaseActivity {
             return view == object;
         }
     }
+
+
+    class ViewPagerAdapter extends PagerAdapter {
+
+        Context mContext;
+        LayoutInflater mLayoutInflater;
+        View[] mView;
+
+        public ViewPagerAdapter(Context context) {
+
+            mContext = context;
+            mLayoutInflater = LayoutInflater.from(context);
+            int count = getCount();
+
+            mView = new View[count];
+
+            for (int i = 0; i < count ; i++) {
+
+                mView[i]  = mLayoutInflater.inflate(R.layout.layout_give_viewpager_item, null);
+
+            }
+
+        }
+
+        @Override
+        public int getCount() {
+
+            return 10;
+
+        }
+
+        @Override
+        public View instantiateItem(ViewGroup container, int position) {
+
+            container.addView(mView[position], ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT);
+
+            return mView[position];
+        }
+
+        @Override
+        public void destroyItem(ViewGroup container, int position, Object object) {
+
+
+            container.removeView((View) object);
+
+        }
+
+        @Override
+        public boolean isViewFromObject(View view, Object object) {
+            return view == object;
+        }
+    }
+
 
 }

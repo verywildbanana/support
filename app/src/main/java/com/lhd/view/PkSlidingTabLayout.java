@@ -184,24 +184,24 @@ public class PkSlidingTabLayout extends HorizontalScrollView {
     	
     	
     	
-    	 if (mTextViewArray !=null && mTextViewArray.isEmpty() == false) {
- 			
-    		 for (int i = 0; i < mTextViewArray.size(); i++) {
- 				
-             	if (position == i) {
- 				
-             		mTextViewArray.get(i).setTextColor(getResources().getColor(R.color.table_green));
-
- 				}
-             	else {
-             		
-             		mTextViewArray.get(i).setTextColor(getResources().getColor(R.color.main_surrounding_tablayout_default));
-             	}
-             	
- 			}
-             
-    		 
- 		}
+//    	 if (mTextViewArray !=null && mTextViewArray.isEmpty() == false) {
+//
+//    		 for (int i = 0; i < mTextViewArray.size(); i++) {
+//
+//             	if (position == i) {
+//
+//             		mTextViewArray.get(i).setTextColor(getResources().getColor(R.color.table_green));
+//
+// 				}
+//             	else {
+//
+//             		mTextViewArray.get(i).setTextColor(getResources().getColor(R.color.main_surrounding_tablayout_default));
+//             	}
+//
+// 			}
+//
+//
+// 		}
     	
     }
     
@@ -263,6 +263,7 @@ public class PkSlidingTabLayout extends HorizontalScrollView {
             }
 
             if(tabTitleView != null) {
+                tabTitleView.setTextColor(getResources().getColor(R.color.black));
                 tabTitleView.setText(adapter.getPageTitle(i));
             }
             mTextViewArray.add(tabTitleView);
