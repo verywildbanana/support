@@ -2,11 +2,12 @@ package com.lhd.giveandreview.base;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.support.v4.app.FragmentActivity;
 
 import com.lhd.giveandreview.R;
 import com.lhd.view.PkViewPager;
 
-public abstract class BaseActivity extends Activity {
+public abstract class BaseActivity extends FragmentActivity {
 
 
 	public final String TAG = this.getClass().getSimpleName().trim();

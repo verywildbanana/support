@@ -1,0 +1,81 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:kiwi="http://schemas.kiwiple.com/kiwi"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/TopBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/g_5_1_topbar"></RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="15dp"
+            android:gravity="center_horizontal"
+            android:paddingTop="15dp">
+
+            <com.lhd.view.PkImageView
+                android:id="@+id/OneBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/g_5_1_list1" />
+
+            <com.lhd.view.PkImageView
+                android:id="@+id/TwoBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/g_5_1_list2" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#d9d9d9"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <com.lhd.view.PkViewPager
+                android:id="@+id/ContentViewPager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+
+            <com.lhd.view.PkImageView
+                android:id="@+id/WrireReviewBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:paddingBottom="15dp"
+                android:src="@drawable/g_5_1_review" />
+
+        </RelativeLayout>
+
+
+        <include
+            layout="@layout/layout_main_menu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

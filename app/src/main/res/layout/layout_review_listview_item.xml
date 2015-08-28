@@ -1,0 +1,160 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:kiwi="http://schemas.kiwiple.com/kiwi"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:paddingBottom="10dp"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <com.lhd.view.PkTextView
+            android:id="@+id/TitleTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:text="진미식당진미식당"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <com.lhd.view.PkImageView
+            android:id="@+id/EyeImg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/g_5_1_look" />
+
+
+        <com.lhd.view.PkTextView
+            android:id="@+id/EyeCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2,115"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            />
+
+
+        <com.lhd.view.PkImageView
+            android:id="@+id/LikeImg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/g_5_1_like" />
+
+
+        <com.lhd.view.PkTextView
+            android:id="@+id/LikeCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1,115"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingRight="7dp"
+            android:paddingLeft="7dp"
+            android:orientation="vertical">
+
+            <com.lhd.view.PkTextView
+                android:id="@+id/LocationTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="홍대입구"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:gravity="center"
+                android:layout_marginTop="3dp"
+                android:textColor="@color/white"
+                android:background="@drawable/g_5_1_textbg"
+                android:textSize="15dp"
+                />
+
+            <com.lhd.view.PkTextView
+                android:id="@+id/ScoreTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4.0"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:textColor="@color/red"
+                android:textSize="33dp"
+                android:layout_marginLeft="6dp"
+                android:textStyle="bold"
+                />
+
+        </LinearLayout>
+
+        <com.lhd.view.PkImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/g_5_1_pic" />
+
+        <com.lhd.view.PkImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/g_5_1_pic" />
+
+        <com.lhd.view.PkImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/g_5_1_pic" />
+
+        <com.lhd.view.PkImageView
+            android:id="@+id/CameraImg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/g_5_1_cam" />
+
+
+    </LinearLayout>
+
+
+    <com.lhd.view.PkTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:text="3대째 이어온 오삼불고기 맛집이고 다영한 메뉴가 있습니다. 친절한 서비스로 모시겠습니다."
+        android:textColor="@color/black_op60"
+        android:textSize="12dp" />
+
+
+</LinearLayout>

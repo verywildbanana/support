@@ -35,7 +35,13 @@ public class MainActivity extends BaseActivity {
 
         PkOnOffToggleButton mGivewMenu = (PkOnOffToggleButton)findViewById(R.id.GivewMenu);
         mGivewMenu.setOnClickListener(mClickListener);
+
+        PkOnOffToggleButton mReviewMenu = (PkOnOffToggleButton)findViewById(R.id.ReviewMenu);
+        mReviewMenu.setOnClickListener(mClickListener);
+
+
         startFlowAni(true);
+
 
     }
 
@@ -50,6 +56,10 @@ public class MainActivity extends BaseActivity {
                     PkIntentManager.getInstance().push(MainActivity.this, GivePageActivity.class, true);
                     break;
 
+                case R.id.ReviewMenu:
+
+                    PkIntentManager.getInstance().push(MainActivity.this, ReviewPageActivity.class, true);
+                    break;
 
             }
 

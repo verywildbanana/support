@@ -47,6 +47,26 @@
         </LinearLayout>
 
 
+        <com.lhd.view.PkImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:layout_alignParentRight="true"
+            android:layout_margin="5dp"
+            android:src="@drawable/g_4_like" />
+
+        <com.lhd.view.PkTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="7dp"
+            android:text="00,000"
+            android:textColor="@color/gray"
+            android:textSize="12dp"
+            />
+
+
     </RelativeLayout>
 
 
