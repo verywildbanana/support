@@ -39,6 +39,8 @@ public class MainActivity extends BaseActivity {
         PkOnOffToggleButton mReviewMenu = (PkOnOffToggleButton)findViewById(R.id.ReviewMenu);
         mReviewMenu.setOnClickListener(mClickListener);
 
+        PkOnOffToggleButton mCouponMenu = (PkOnOffToggleButton)findViewById(R.id.CouponMenu);
+        mCouponMenu.setOnClickListener(mClickListener);
 
         startFlowAni(true);
 
@@ -60,6 +62,13 @@ public class MainActivity extends BaseActivity {
 
                     PkIntentManager.getInstance().push(MainActivity.this, ReviewPageActivity.class, true);
                     break;
+
+                case R.id.CouponMenu:
+
+                    PkIntentManager.getInstance().push(MainActivity.this, CouponPageActivity.class, true);
+                    break;
+
+
 
             }
 
