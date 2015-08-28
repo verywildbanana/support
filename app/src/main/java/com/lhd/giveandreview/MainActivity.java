@@ -8,6 +8,7 @@ import android.view.animation.TranslateAnimation;
 
 import com.lhd.giveandreview.base.BaseActivity;
 import com.lhd.giveandreview.base.PkIntentManager;
+import com.lhd.view.PkButton;
 import com.lhd.view.PkOnOffToggleButton;
 
 public class MainActivity extends BaseActivity {
@@ -42,6 +43,12 @@ public class MainActivity extends BaseActivity {
         PkOnOffToggleButton mCouponMenu = (PkOnOffToggleButton)findViewById(R.id.CouponMenu);
         mCouponMenu.setOnClickListener(mClickListener);
 
+        PkButton mMoreMenu  = (PkButton)findViewById(R.id.MoreMenu);
+        mMoreMenu.setOnClickListener(mClickListener);
+
+
+
+
         startFlowAni(true);
 
 
@@ -67,7 +74,10 @@ public class MainActivity extends BaseActivity {
 
                     PkIntentManager.getInstance().push(MainActivity.this, CouponPageActivity.class, true);
                     break;
+                case R.id.MoreMenu:
 
+                    PkIntentManager.getInstance().push(MainActivity.this, MorePageActivity.class, true);
+                    break;
 
 
             }
