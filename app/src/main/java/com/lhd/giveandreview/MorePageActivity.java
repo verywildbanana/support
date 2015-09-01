@@ -33,5 +33,18 @@ public class MorePageActivity extends BaseActivity {
             }
         });
 
+        findViewById(R.id.RegisterBtn).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                PkIntentManager.getInstance().push(MorePageActivity.this, RegisterStoreActivity.class, true);
+            }
+        });
+
+
+
+
+
+
     }
 }

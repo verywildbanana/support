@@ -44,6 +44,7 @@
             android:orientation="horizontal">
 
             <com.lhd.view.PkButton
+                android:id="@+id/RegisterBtn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginRight="6dp"
