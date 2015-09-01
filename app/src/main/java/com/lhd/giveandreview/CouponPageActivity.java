@@ -1,8 +1,10 @@
 package com.lhd.giveandreview;
 
 import android.os.Bundle;
+import android.view.View;
 
 import com.lhd.giveandreview.base.BaseActivity;
+import com.lhd.giveandreview.base.PkIntentManager;
 
 public class CouponPageActivity extends BaseActivity {
 
@@ -23,6 +25,22 @@ public class CouponPageActivity extends BaseActivity {
 
         setContentView(R.layout.activity_coupon);
 
+
+        findViewById(R.id.CouponItemLay1).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                PkIntentManager.getInstance().push(CouponPageActivity.this, CouponDetailActivity.class, true);
+            }
+        });
+
+        findViewById(R.id.CouponItemLay2).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                PkIntentManager.getInstance().push(CouponPageActivity.this, CouponDetailActivity.class, true);
+            }
+        });
 
     }
 }

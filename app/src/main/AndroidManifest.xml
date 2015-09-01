@@ -67,6 +67,12 @@
         <activity
             android:name=".WriteActivity"
             android:configChanges="keyboardHidden|orientation|locale|uiMode"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.NoBackground" />
+        <activity
+            android:name=".CouponDetailActivity"
+            android:configChanges="keyboardHidden|orientation|locale|uiMode"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.NoBackground" />
 
