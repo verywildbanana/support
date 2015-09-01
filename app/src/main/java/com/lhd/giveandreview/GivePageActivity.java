@@ -8,6 +8,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.lhd.giveandreview.base.BaseActivity;
+import com.lhd.giveandreview.base.PkIntentManager;
 import com.lhd.view.PkCirclePageIndicator;
 import com.lhd.view.PkSlidingTabLayout;
 import com.lhd.view.PkViewPager;
@@ -175,6 +176,14 @@ public class GivePageActivity extends BaseActivity {
         public View instantiateItem(ViewGroup container, int position) {
 
             container.addView(mView[position], ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT);
+
+            mView[position].setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+
+                    PkIntentManager.getInstance().push(GivePageActivity.this, GiveDetailActivity.class, true);
+                }
+            });
 
             return mView[position];
         }

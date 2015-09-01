@@ -4,7 +4,7 @@ import android.os.Bundle;
 
 import com.lhd.giveandreview.base.BaseActivity;
 
-public class MorePageActivity extends BaseActivity {
+public class GiveDetailActivity extends BaseActivity {
 
 
     @Override
@@ -20,7 +20,7 @@ public class MorePageActivity extends BaseActivity {
     @Override
     public void initActivity() {
 
-        setContentView(R.layout.activity_more);
+        setContentView(R.layout.activity_give_detail);
 
 
     }
