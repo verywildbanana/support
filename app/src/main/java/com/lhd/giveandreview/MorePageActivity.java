@@ -1,8 +1,10 @@
 package com.lhd.giveandreview;
 
 import android.os.Bundle;
+import android.view.View;
 
 import com.lhd.giveandreview.base.BaseActivity;
+import com.lhd.giveandreview.base.PkIntentManager;
 
 public class MorePageActivity extends BaseActivity {
 
@@ -22,6 +24,14 @@ public class MorePageActivity extends BaseActivity {
 
         setContentView(R.layout.activity_more);
 
+
+        findViewById(R.id.NoticeBtn).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                PkIntentManager.getInstance().push(MorePageActivity.this, NoticeActivity.class, true);
+            }
+        });
 
     }
 }

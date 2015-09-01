@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="false" 
+    android:background="@color/white"
+    android:paddingTop="21dp"
+    android:paddingBottom="21dp"
+    >
+
+    <com.lhd.view.PkImageView
+        android:id="@+id/ArrowBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="16dip"
+        android:src="@drawable/g_13_select" />
+
+    <LinearLayout
+        android:id="@+id/TextLay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/ArrowBtn"
+        android:duplicateParentState="true"
+        android:orientation="vertical"
+         android:layout_centerVertical="true"
+         android:paddingLeft="17dp"
+        >
+
+        <com.lhd.view.PkTextView
+            android:id="@+id/TitleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="1dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="업데이트로 인한 서비스 중지 안내\n어쩌고 저쩌고"
+            android:textColor="#232323"
+            android:textSize="19dip" />
+
+    </LinearLayout>
+
+</RelativeLayout>
