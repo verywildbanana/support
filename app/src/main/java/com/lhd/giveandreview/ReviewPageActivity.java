@@ -10,6 +10,7 @@ import android.view.ViewGroup;
 
 import com.lhd.fragment.PoiListForReviewSearchFragment;
 import com.lhd.giveandreview.base.BaseActivity;
+import com.lhd.giveandreview.base.PkIntentManager;
 import com.lhd.view.PkImageView;
 import com.lhd.view.PkViewPager;
 
@@ -49,6 +50,7 @@ public class ReviewPageActivity extends BaseActivity {
 
         mViewPager = (PkViewPager) findViewById(R.id.ContentViewPager);
 
+        findViewById(R.id.WrireReviewBtn).setOnClickListener(mButtonClickListener);
 
         mViewPagerAdapter = new ViewPagerAdapter(getSupportFragmentManager());
         mViewPager.setAdapter(mViewPagerAdapter);
@@ -78,6 +80,12 @@ public class ReviewPageActivity extends BaseActivity {
 
                         mViewPager.setCurrentItem(1);
                     }
+
+                    break;
+
+                case R.id.WrireReviewBtn:
+
+                    PkIntentManager.getInstance().push(ReviewPageActivity.this, WriteActivity.class, true);
 
                     break;
             }
