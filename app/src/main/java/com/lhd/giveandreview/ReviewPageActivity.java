@@ -85,7 +85,7 @@ public class ReviewPageActivity extends BaseActivity {
 
                 case R.id.WrireReviewBtn:
 
-                    PkIntentManager.getInstance().push(ReviewPageActivity.this, WriteActivity.class, true);
+                    PkIntentManager.getInstance().push(ReviewPageActivity.this, WriteDetailActivity.class, true);
 
                     break;
             }
