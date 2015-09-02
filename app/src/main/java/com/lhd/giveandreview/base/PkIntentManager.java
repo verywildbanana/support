@@ -2,19 +2,12 @@ package com.lhd.giveandreview.base;
 
 import android.app.Activity;
 import android.content.Intent;
-import android.content.pm.ApplicationInfo;
-import android.content.pm.PackageInfo;
-import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.Handler;
 import android.os.Parcelable;
 
 import com.lhd.Constants;
-import com.lhd.giveandreview.R;
 import com.lhd.util.SmartLog;
-
-import org.json.JSONException;
-import org.json.JSONObject;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -264,8 +257,8 @@ public class PkIntentManager {
 
 
         currentAct.startActivity(intent);
-        currentAct.overridePendingTransition(
-                R.anim.pk_start_enter, R.anim.pk_start_exit);
+//        currentAct.overridePendingTransition(
+//                R.anim.pk_start_enter, R.anim.pk_start_exit);
 
     }
 
@@ -292,8 +285,8 @@ public class PkIntentManager {
 
         if (transition) {
 
-            currentAct.overridePendingTransition(
-                    R.anim.pk_start_enter, R.anim.pk_start_exit);
+//            currentAct.overridePendingTransition(
+//                    R.anim.pk_start_enter, R.anim.pk_start_exit);
 
         } else {
 
@@ -332,8 +325,8 @@ public class PkIntentManager {
 
         if (transition) {
 
-            currentAct.overridePendingTransition(
-                    R.anim.pk_start_enter, R.anim.pk_start_exit);
+//            currentAct.overridePendingTransition(
+//                    R.anim.pk_start_enter, R.anim.pk_start_exit);
 
         } else {
 
@@ -432,8 +425,8 @@ public class PkIntentManager {
         log("pushWithActionForResult");
         currentAct.startActivityForResult(intent, requestCode);
 
-        currentAct.overridePendingTransition(
-                R.anim.pk_start_enter, R.anim.pk_start_exit);
+//        currentAct.overridePendingTransition(
+//                R.anim.pk_start_enter, R.anim.pk_start_exit);
 
     }
 
@@ -561,8 +554,8 @@ public class PkIntentManager {
 
 
         currentAct.finish();
-        currentAct.overridePendingTransition(
-                R.anim.pk_end_enter, R.anim.pk_end_exit);
+//        currentAct.overridePendingTransition(
+//                R.anim.pk_end_enter, R.anim.pk_end_exit);
 
     }
 

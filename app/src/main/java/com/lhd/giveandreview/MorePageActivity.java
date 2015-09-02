@@ -40,8 +40,21 @@ public class MorePageActivity extends BaseActivity {
                 PkIntentManager.getInstance().push(MorePageActivity.this, RegisterStoreActivity.class, true);
             }
         });
+        findViewById(R.id.RecommendBtn).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
 
+                PkIntentManager.getInstance().push(MorePageActivity.this, RecommendActivity.class, true);
+            }
+        });
 
+        findViewById(R.id.TermBtn).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                PkIntentManager.getInstance().push(MorePageActivity.this, TermActivity.class, true);
+            }
+        });
 
 
 
