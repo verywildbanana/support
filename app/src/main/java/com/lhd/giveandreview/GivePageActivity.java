@@ -39,6 +39,9 @@ public class GivePageActivity extends BaseActivity {
 
 
         setContentView(R.layout.activity_give_page);
+        setTabBtn();
+        mGivewMenu.setOn(true);
+        mGivewMenu.setClickable(false);
 
         mSlideTabLay = (PkSlidingTabLayout)findViewById(R.id.SlideTabLay);
         PkViewPager viewPager = (PkViewPager)findViewById(R.id.ViewPager);

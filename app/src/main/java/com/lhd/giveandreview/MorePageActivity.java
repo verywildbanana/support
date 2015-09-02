@@ -23,7 +23,9 @@ public class MorePageActivity extends BaseActivity {
     public void initActivity() {
 
         setContentView(R.layout.activity_more);
-
+        setTabBtn();
+        mMoreMenu.setOn(true);
+        mMoreMenu.setClickable(false);
 
         findViewById(R.id.NoticeBtn).setOnClickListener(new View.OnClickListener() {
             @Override

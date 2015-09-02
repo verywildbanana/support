@@ -21,7 +21,7 @@ public class GiveDetailActivity extends BaseActivity {
     public void initActivity() {
 
         setContentView(R.layout.activity_give_detail);
-
+        setTabBtn();
 
     }
 }

@@ -21,6 +21,7 @@ public class PkOnOffToggleButton extends ImageView {
 	int mOnImageResource;
 	int mOffImageResource;
 	public boolean toggleButtonClickable = true;
+	public boolean toggleButtonTouchOnOffAble  = true;
 
 	Object mTag;
 
@@ -61,6 +62,10 @@ public class PkOnOffToggleButton extends ImageView {
 
 		toggleButtonClickable = attrs.getAttributeBooleanValue(
 				Constants.KIWI_SCHEME, "ToggleButtonClickable", true);
+
+		toggleButtonTouchOnOffAble = attrs.getAttributeBooleanValue(
+				Constants.KIWI_SCHEME, "ToggleTouchOnOffAble", true);
+
 
 		if (!toggleButtonClickable) {
 			setOnClickListener(null);
@@ -128,6 +133,11 @@ public class PkOnOffToggleButton extends ImageView {
 
 	@Override
 	public boolean onTouchEvent(MotionEvent event) {
+
+		if(toggleButtonTouchOnOffAble == false) {
+
+			return super.onTouchEvent(event);
+		}
 
 		if (isEnabled() && toggleButtonClickable) {
 			if (event.getAction() == MotionEvent.ACTION_UP) {

@@ -19,9 +19,11 @@
             android:layout_weight="1">
 
             <com.lhd.view.PkOnOffToggleButton
+                android:id="@+id/HomeMenu"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerInParent="true"
+                kiwi:ToggleTouchOnOffAble="false"
                 kiwi:ToggleButtonOffImage="@drawable/gr_menu_02"
                 kiwi:ToggleButtonOnImage="@drawable/gr_menu_01" />
 
@@ -39,6 +41,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerInParent="true"
+                kiwi:ToggleTouchOnOffAble="false"
                 kiwi:ToggleButtonOffImage="@drawable/gr_menu_04"
                 kiwi:ToggleButtonOnImage="@drawable/gr_menu_03" />
 
@@ -55,6 +58,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerInParent="true"
+                kiwi:ToggleTouchOnOffAble="false"
                 kiwi:ToggleButtonOffImage="@drawable/gr_menu_06"
                 kiwi:ToggleButtonOnImage="@drawable/gr_menu_05" />
 
@@ -71,6 +75,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerInParent="true"
+                kiwi:ToggleTouchOnOffAble="false"
                 kiwi:ToggleButtonOffImage="@drawable/gr_menu_13"
                 kiwi:ToggleButtonOnImage="@drawable/gr_menu_12" />
 
@@ -82,12 +87,14 @@
             android:layout_height="wrap_content"
             android:layout_weight="1">
 
-            <com.lhd.view.PkButton
+            <com.lhd.view.PkOnOffToggleButton
                 android:id="@+id/MoreMenu"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerInParent="true"
-                android:background="@drawable/gr_menu_09_click" />
+                kiwi:ToggleTouchOnOffAble="false"
+                kiwi:ToggleButtonOffImage="@drawable/gr_menu_10"
+                kiwi:ToggleButtonOnImage="@drawable/gr_menu_09" />
 
         </RelativeLayout>
 

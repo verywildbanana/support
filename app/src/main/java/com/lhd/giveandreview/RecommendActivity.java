@@ -21,7 +21,7 @@ public class RecommendActivity extends BaseActivity {
     public void initActivity() {
 
         setContentView(R.layout.activity_recommend);
-
+        setTabBtn();
 
     }
 }

@@ -25,6 +25,7 @@ public class WriteDetailActivity extends BaseActivity {
     public void initActivity() {
 
         setContentView(R.layout.activity_write);
+        setTabBtn();
         mWriteEditTxt = (PkEditText)findViewById(R.id.WriteEditTxt);
         mWriteEditTxt.postDelayed(new Runnable() {
             @Override

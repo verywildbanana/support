@@ -36,6 +36,8 @@ public class NoticeActivity extends BaseActivity {
     public void initActivity() {
 
         setContentView(R.layout.activity_notice);
+        setTabBtn();
+
         mExpandListView = (PkExpandableListView) findViewById(R.id.ExpandListView);
 
         mDataArray.add(new NoticeData("0"));

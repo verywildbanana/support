@@ -24,7 +24,9 @@ public class CouponPageActivity extends BaseActivity {
     public void initActivity() {
 
         setContentView(R.layout.activity_coupon);
-
+        setTabBtn();
+        mCouponMenu.setOn(true);
+        mCouponMenu.setClickable(false);
 
         findViewById(R.id.CouponItemLay1).setOnClickListener(new View.OnClickListener() {
             @Override

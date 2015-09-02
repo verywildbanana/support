@@ -33,6 +33,7 @@ public class WriteSearchPlaceActivity extends BaseActivity {
     public void initActivity() {
 
         setContentView(R.layout.activity_write_search_place);
+        setTabBtn();
 
         mListView = (PkListView) findViewById(R.id.ListView);
         ArrayList<String> data = new ArrayList<String>();

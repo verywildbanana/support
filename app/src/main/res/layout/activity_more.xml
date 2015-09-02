@@ -105,10 +105,19 @@
     </LinearLayout>
 
 
+
+    <include
+        android:id="@+id/TabLay"
+        layout="@layout/layout_main_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+
+
     <com.lhd.view.PkImageView
+        android:layout_above="@+id/TabLay"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="40dp"
         android:background="@drawable/g_7_logo" />

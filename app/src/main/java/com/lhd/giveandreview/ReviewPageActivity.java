@@ -42,6 +42,10 @@ public class ReviewPageActivity extends BaseActivity {
 
 
         setContentView(R.layout.activity_review_page);
+        setTabBtn();
+        mReviewMenu.setOn(true);
+        mReviewMenu.setClickable(false);
+
         mOneBtn = (PkImageView) findViewById(R.id.OneBtn);
         mTwoBtn = (PkImageView) findViewById(R.id.TwoBtn);
 

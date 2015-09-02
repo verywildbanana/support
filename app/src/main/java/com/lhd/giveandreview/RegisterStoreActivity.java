@@ -21,7 +21,7 @@ public class RegisterStoreActivity extends BaseActivity {
     public void initActivity() {
 
         setContentView(R.layout.activity_register_store);
-
+        setTabBtn();
 
     }
 }

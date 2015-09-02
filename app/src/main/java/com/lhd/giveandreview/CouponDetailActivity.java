@@ -21,7 +21,7 @@ public class CouponDetailActivity extends BaseActivity {
     public void initActivity() {
 
         setContentView(R.layout.activity_coupon_detail);
-
+        setTabBtn();
 
     }
 }
